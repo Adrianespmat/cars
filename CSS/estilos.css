@@ -1,0 +1,45 @@
+@font-face {
+    font-family: rayo;
+    src: url(/FUENTES/Kelvinized.ttf);
+}
+
+h1 {
+    font-family: rayo;
+    color:brown;
+    background-color:rgb(255, 238, 0);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+p {
+    font-style: bold;
+    color: white;
+}
+
+body {
+background-image: url(/fotos/fonooo.webp);
+background-size: cover;
+background-position: cover;
+}
+*{margin: 0%;
+    padding: 0%;
+}
+.cabecera {
+    background-color: brown;
+    text-align: center;
+    width: 72%;
+    left: 15%;
+    padding: 10px;
+    position: fixed;
+    
+}
+.publiIZQ {
+margin-top: 0px;
+float: left;
+
+}
+#anuncio {
+height: 100vh;
+
+}
+
