@@ -11,10 +11,18 @@ h1 {
     margin-right: 10%;
     border-radius: 30px;
 }
-p {
-    font-style: bold;
-    color: white;
+#descripcion {
+    text-shadow: rgb(53, 2, 2) 2px 1px 0px;
+    font-weight:bold;
 }
+.parrafos {
+    
+    color: yellow;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+
 
 body {
 background-image: url(/fotos/fonooo.webp);
@@ -25,21 +33,166 @@ background-position: cover;
     padding: 0%;
 }
 .cabecera {
+    z-index: 2;
     background-color: brown;
     text-align: center;
-    width: 72%;
-    left: 15%;
+    width: 100%;
     padding: 10px;
     position: fixed;
+    margin-top: 0%;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 5%;
+}
+
+nav .enlace{
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    left: 2%;
+}
+
+nav .enlace::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}
+
+nav .enlace:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.enlace {
+    width: 5%;
+    flex-basis: 200px;
+    background-color: #d9cbcb;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+
+.publiIZQ {
+margin-top: 85px;
+float: left;
+}
+
+.publiDEH {
+margin-top: 85px;
+float: right;
+margin-right: -58px;
+}
+
+.anuncio {
+height: 200vh;
+width: 78%;
+
+}
+.anunciodere {
+    height: 200vh;
+    width: 81%;
+}
+
+.contenedor1 {
+    z-index: 1;
+    position: absolute;
+    top: 210px;
+    left: 20%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 25%;
+}
+
+.contenedor2 {
+    
+    position: absolute;
+    top: 210px;
+    left: 52%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 25%;
+}
+
+.contenedor3 {
+    
+    position: absolute;
+    top: 650px;
+    left: 35%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 25%;
+}
+
+.contenedor4 {
+    
+    position: absolute;
+    top: 1120px;
+    left: 20%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 57%;
+}
+
+
+h2 {
+    color:  brown;
+    font-family: rayo;
+}
+
+.cuerpo {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
     
 }
-.publiIZQ {
-margin-top: 0px;
-float: left;
 
+.fotos {
+    width: 300px;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 10px;
 }
-#anuncio {
-height: 100vh;
 
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
 }
+
 
