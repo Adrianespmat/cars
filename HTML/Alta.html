@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="/CSS/estilos.css">
 <head>
     <meta charset="UTF-8">
     <meta name="Adrián" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
 </head>
 <body>
+    <div class="cabecera">
+        <h1>RAYO MCQUEEN</h1>
+        <div id="descripcion">
+            <p class="parrafos">McQueen es un carro que es arrogante, presumido y confiado, creyendo que puede ganar la Copa Piston por su cuenta sin la ayuda de cualquier equipo o entrenador.</p> 
+            <p class="parrafos">Está tan lleno de sí mismo hasta el punto en el que afirma que no necesita amigos.</p>
+        </div>
     
+    <div class="login">
+        <form action="">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="password" id="apellidos" name="apelllidos" required>
+
+
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" pattern="\d{8}[A-Z]" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion"  pattern="C/.*\d+P[A-Z]" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="codigopostal">Código postal</label>
+            <input type="text" id="codigopostal" name="codigopostal" pattern="\d{5}" required>
+            <datalist id="codigopostale">
+                <option value="12345">
+                <option value="67890">
+                <option value="11111">
+                <option value="22222">
+                <option value="33333">
+            </datalist>
+
+            <label for="país">País</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="fecha_nacimiento">Fecha nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="correo@correo.es">
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" pattern="[A-Za-z]{1,7}[A-Za-z0-9]{5}&\d{2}" required>
+
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="aficiones">Aficiones</label>
+            <input type="checkbox" id="aficion1" name="aficiones" value="Deporte"> Deporte<br>
+        <input type="checkbox" id="aficion2" name="aficiones" value="Música"> Música<br>
+        <input type="checkbox" id="aficion3" name="aficiones" value="Lectura"> Lectura<br>
+        <input type="checkbox" id="aficion4" name="aficiones" value="Cine"> Cine<br>
+        <input type="text" id="aficion_otra" name="aficiones" placeholder="Otra afición">
+
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="window.location.href='pagina_principal.html';">Cancelar</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>Contacto: rayo@mcqueen.com</p>
+    </footer>
 </body>
 </html>
