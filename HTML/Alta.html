@@ -13,7 +13,7 @@
             <p class="parrafos">McQueen es un carro que es arrogante, presumido y confiado, creyendo que puede ganar la Copa Piston por su cuenta sin la ayuda de cualquier equipo o entrenador.</p> 
             <p class="parrafos">Está tan lleno de sí mismo hasta el punto en el que afirma que no necesita amigos.</p>
         </div>
-    
+    </div>
     <div class="login">
         <form action="">
             <label for="Nombre">Nombre</label>
@@ -53,23 +53,35 @@
 
             <label for="contraseña">Contraseña</label>
             <input type="password" id="contraseña" name="contraseña" pattern="[A-Za-z]{1,7}[A-Za-z0-9]{5}&\d{2}" required>
-
+            
             <label for="sexo">Sexo</label>
             <select id="sexo" name="sexo" required>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
                 <option value="otro">Otro</option>
             </select>
-
-            <label for="aficiones">Aficiones</label>
-            <input type="checkbox" id="aficion1" name="aficiones" value="Deporte"> Deporte<br>
-        <input type="checkbox" id="aficion2" name="aficiones" value="Música"> Música<br>
-        <input type="checkbox" id="aficion3" name="aficiones" value="Lectura"> Lectura<br>
-        <input type="checkbox" id="aficion4" name="aficiones" value="Cine"> Cine<br>
-        <input type="text" id="aficion_otra" name="aficiones" placeholder="Otra afición">
+            <br><br>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <label class="labelafi">
+                    <input class="afi" type="checkbox" id="aficion1" name="aficiones" value="Deporte"> Deporte
+                </label>
+                <label class="labelafi">
+                    <input class="afi" type="checkbox" id="aficion2" name="aficiones" value="Música"> Música
+                </label>
+                <label class="labelafi">
+                    <input class="afi" type="checkbox" id="aficion3" name="aficiones" value="Lectura"> Lectura
+                </label>
+                <label class="labelafi">
+                    <input class="afi" type="checkbox" id="aficion4" name="aficiones" value="Cine"> Cine
+                </label>
+                <label class="labelafi" for="aficion_otra">Otra</label>
+                    <input class="afitext" type="text" id="aficion_otra" name="aficiones" placeholder="Escribe otra afición">
+            </fieldset>
+            <br><br>
 
         <label for="foto">Foto de perfil:</label>
-        <input type="file" id="foto" name="foto" accept="image/*">
+        <input type="file" id="foto" name="foto" accept="image/*"><br>
 
         <button type="reset">Borrar</button>
         <button type="submit">Enviar</button>
@@ -78,7 +90,6 @@
         </form>
     </div>
     
-    
     <footer>
         <div class="letra">
             <p>Contacto: rayo@mcqueen.com</p>
@@ -86,7 +97,6 @@
         <div class="numero">
             <p><span class="parpadeo">95</span></p>
         </div>
-        
-    </footer>
+   
 </body>
 </html>
