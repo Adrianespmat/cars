@@ -19,8 +19,8 @@ h1 {
     display: inline-block;
     animation: moveTitle 3s infinite ease-in-out, colorChange 3s infinite alternate;
     position: absolute;
-    left: 28%;
-    top: 5%
+    left: 30%;
+    top: 150px;
 }
 
 @keyframes moveTitle {
@@ -51,8 +51,8 @@ h1 {
     width: 560px; 
     height: 315px;
     position: absolute;
-    top: 160px;
-    left: 17%;
+    top: 140px;
+    left: 22%;
     border-radius: 50px;
     
 }
@@ -60,31 +60,33 @@ h1 {
 .contNoti {
     z-index: 1;
     position: absolute;
-    top: 750px;
+    top: 850px;
     left: 20%;
     background-color: #d9cbcb;
     border-radius: 10px;
     box-shadow: 0 0 35px  brown;
     padding: 1%;
     width: 57%;
+    height: 450px;
 }
 
 .contNoti2 {
     
     position: absolute;
-    top: 1300px;
+    top: 1400px;
     left: 20%;
     background-color: #d9cbcb;
     border-radius: 10px;
     box-shadow: 0 0 35px  brown;
     padding: 1%;
     width: 57%;
+    height: 450px;
 }
 
 .contNotiVide {
     
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 20%;
     background-color: #d9cbcb;
     border-radius: 10px;
@@ -98,8 +100,8 @@ h1 {
     width: 560px; 
     height: 315px;
     position: absolute;
-    top: 160px;
-    left: 17%;
+    top: 120px;
+    left: 22%;
     border-radius: 50px;
 }
 
@@ -117,7 +119,7 @@ h1 {
 
 
 body {
-background-image: url(/fotos/fonooo.webp);
+background-image: url(/fotos/todos.jpg);
 background-size: cover;
 background-position: cover;
 }
@@ -139,7 +141,7 @@ a {
 }
 
 
- li .submenu {
+li .submenu {
     display: none; 
     position: absolute;
     top: 130%; 
@@ -203,6 +205,7 @@ nav .enlace:after {
 
 nav .enlace:hover::after {
     width: 100%;
+    background-color: #ff5733;
     left: 0;
 }
 
@@ -323,6 +326,7 @@ footer {
     right: 0%;
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 
 .letra{
