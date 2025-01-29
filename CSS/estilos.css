@@ -10,7 +10,99 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 30px;
+    text-align: center;
 }
+
+#Noticias {
+    font-size: 3rem;
+    color: #333;
+    display: inline-block;
+    animation: moveTitle 3s infinite ease-in-out, colorChange 3s infinite alternate;
+    position: absolute;
+    left: 28%;
+    top: 5%
+}
+
+@keyframes moveTitle {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #333;
+    }
+    50% {
+        color: #ff5733;
+    }
+    100% {
+        color: #333;
+    }
+}
+
+#cars4VId {
+    width: 560px; 
+    height: 315px;
+    position: absolute;
+    top: 160px;
+    left: 17%;
+    border-radius: 50px;
+    
+}
+
+.contNoti {
+    z-index: 1;
+    position: absolute;
+    top: 750px;
+    left: 20%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 57%;
+}
+
+.contNoti2 {
+    
+    position: absolute;
+    top: 1300px;
+    left: 20%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 57%;
+}
+
+.contNotiVide {
+    
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    background-color: #d9cbcb;
+    border-radius: 10px;
+    box-shadow: 0 0 35px  brown;
+    padding: 1%;
+    width: 57%;
+    height: 500px;
+}
+
+.fotosNoti {
+    width: 560px; 
+    height: 315px;
+    position: absolute;
+    top: 160px;
+    left: 17%;
+    border-radius: 50px;
+}
+
 #descripcion {
     text-shadow: rgb(53, 2, 2) 2px 1px 0px;
     font-weight:bold;
@@ -39,11 +131,44 @@ background-position: cover;
     width: 100%;
     padding: 10px;
     margin-top: 0%;
+    position: fixed;
 }
 a {
     color: red;
     text-decoration: none;
 }
+
+
+ li .submenu {
+    display: none; 
+    position: absolute;
+    top: 130%; 
+    left: 5px;
+    background-color:firebrick;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+li .submenu li {
+    border-bottom: 1px solid rgb(210, 120, 120);
+}
+li .submenu li{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    padding-block: 5%;
+}
+li .submenu li:hover {
+    background-color:yellow;
+}
+li:hover .submenu {
+    display: block; 
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +176,7 @@ nav {
     align-items: center;
     text-align: center;
     margin-right: 5%;
+    
 }
 
 nav .enlace{
@@ -64,7 +190,7 @@ nav .enlace{
     left: 2%;
 }
 
-nav .enlace::after {
+nav .enlace:after {
     content: '';
     position: absolute;
     width: 0;
@@ -90,6 +216,7 @@ nav .enlace:hover::after {
     cursor: pointer;
     margin-left: 3%;
     margin-top: 1%;
+    
 }
 
 
@@ -120,7 +247,7 @@ width: 78%;
 .contenedor1 {
     z-index: 1;
     position: absolute;
-    top: 210px;
+    top: 280px;
     left: 20%;
     background-color: #d9cbcb;
     border-radius: 10px;
@@ -132,7 +259,7 @@ width: 78%;
 .contenedor2 {
     
     position: absolute;
-    top: 210px;
+    top: 280px;
     left: 52%;
     background-color: #d9cbcb;
     border-radius: 10px;
@@ -144,7 +271,7 @@ width: 78%;
 .contenedor3 {
     
     position: absolute;
-    top: 650px;
+    top: 720px;
     left: 35%;
     background-color: #d9cbcb;
     border-radius: 10px;
@@ -156,7 +283,7 @@ width: 78%;
 .contenedor4 {
     
     position: absolute;
-    top: 1500px;
+    top: 1570px;
     left: 20%;
     background-color: #d9cbcb;
     border-radius: 10px;
@@ -210,7 +337,7 @@ footer {
     width: 560px; 
     height: 315px;
     position: absolute;
-    top: 1100px;
+    top: 1170px;
     left: 30%;
     border-radius: 50px;
 }
@@ -229,7 +356,7 @@ footer {
     position: absolute;
     left: 30%;
     top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: -10vh;
 }
 
 form {
