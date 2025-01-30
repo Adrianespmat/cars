@@ -119,7 +119,7 @@ h1 {
 
 
 body {
-background-image: url(/fotos/todos.jpg);
+background-image: url(/fotos/fonooo.webp);
 background-size: cover;
 background-position: cover;
 }
@@ -327,6 +327,7 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 40px;
+    z-index: 2;
 }
 
 .letra{
@@ -448,21 +449,89 @@ legend {
 }
 
 .parpadeo {
-    color: red; /* Color del texto */
+    color: red; 
     font-weight: bold;
     font-size: 24px;
-    animation: parpadeo 1s infinite; /* Animación infinita */
+    animation: parpadeo 1s infinite; 
     font-family: rayo;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes parpadeo {
     0%, 100% {
-        opacity: 1; /* Totalmente visible */
+        opacity: 1;
     }
     50% {
-        opacity: 0; /* Invisible */
+        opacity: 0; 
     }
 
+}
+
+
+table {
+    width: 20%;
+    margin-top: 580px;
+    margin-left: 41.5%;
+    justify-content: center;
+    border-collapse: collapse;
+    background-color: #ffd700;
+    color: #000;
+    box-shadow: 0px 0px 10px #ff0101;
+    margin-bottom: 5%;
+}
+th, td {
+    padding: 15px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+    font-family: rayo;
+}
+th {
+    background-color: #ff4500;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #ffcc00;
+}
+.columna {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #ffd700;
+    color: black;
+    padding: 10px;
+    border: 2px solid #ff4500;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
+    font-weight: bold;
+    border-radius: 5px;
+}
+td:hover .columna {
+    display: block;
+}
+th:nth-child(2), td:nth-child(2) {
+    display: none;
+}
+
+
+
+
+@keyframes moverImagen {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 34%;
+    }
+}
+.imagenMovimiento {
+    position: absolute; 
+    height: 315px;
+    top: 20%;
+    right: -100px; /* Comienza fuera de la pantalla */
+    width: 560px;
+    animation: moverImagen 5s ease-out forwards ;
+    border-radius: 30px;
 }
     
