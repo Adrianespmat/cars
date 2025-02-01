@@ -100,7 +100,7 @@ h1 {
     width: 560px; 
     height: 315px;
     position: absolute;
-    top: 120px;
+    top: 130px;
     left: 22%;
     border-radius: 50px;
 }
@@ -299,14 +299,21 @@ width: 78%;
 h2 {
     color:  brown;
     font-family: rayo;
+    animation: sombra-parpadeo 2s infinite alternate;
+}
+
+@keyframes sombra-parpadeo {
+            
+    50% { text-shadow: 15px 15px 15px rgba(255, 0, 0, 0.5); }
+    100% { text-shadow: 15px 5px 15px rgb(229, 255, 0); }
 }
 
 .cuerpo {
     margin-top: 10px;
     text-align: justify;
     font-size: 15px;
-    
 }
+
 
 .fotos {
     width: 300px;
